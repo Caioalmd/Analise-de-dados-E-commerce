@@ -32,6 +32,7 @@ for csv_file in csv_files:
     
     print(f'- Table "{table_name}" created with {df_temp.shape[0]} rows.')
 
+# SQL Practice 
     join_query = '''
 SELECT 
     c.*,
@@ -196,3 +197,4 @@ full_path = os.path.join(folder_path, file_name)
 df.to_csv(full_path, index=False, encoding='utf-8-sig')
 
 print(f"✅ Dataset saved successfully at: {full_path}")
+
